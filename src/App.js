@@ -105,11 +105,11 @@ function App() {
         <Form onSubmit={(event) => handleSubmit(event)}>
           <FormGroup>
             <Label for="totalAmount">Total Amount</Label>
-            <NumberFormat thousandSeparator={true} prefix={'RM'} className="form-control" name="totalAmount" id="totalAmount" value={formData.totalAmount} onChange={(event) => changeAmount(event)}></NumberFormat>
+            <NumberFormat thousandSeparator={true} prefix={'RM '} className="form-control" name="totalAmount" id="totalAmount" value={formData.totalAmount} onChange={(event) => changeAmount(event)}></NumberFormat>
           </FormGroup>
           <FormGroup>
             <Label for="totalPaid">Total Paid</Label>
-            <NumberFormat thousandSeparator={true} prefix={'RM'} className="form-control" name="totalPaid" id="totalPaid" value={formData.totalPaid} onChange={(event) => changePaid(event)}></NumberFormat>
+            <NumberFormat thousandSeparator={true} prefix={'RM '} className="form-control" name="totalPaid" id="totalPaid" value={formData.totalPaid} onChange={(event) => changePaid(event)}></NumberFormat>
           </FormGroup>
           <Button type="submit" value="Submit">Submit</Button>
         </Form>
